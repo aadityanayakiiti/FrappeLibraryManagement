@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-15 11:23:19.102068",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_type",
+  "author_editor_name",
+  "book_title",
+  "edition",
+  "publisher",
+  "publish_year",
+  "course_code_for_text_book",
+  "no_of_students_for_text_book",
+  "no_of_copies_required",
+  "estimated_unit_cost",
+  "total_estimated_cost",
+  "duplication_check_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "author_editor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Author/ Editor Name (Surname First)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Book Type",
+   "options": "Text Book\nReference Book\nResearch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Edition"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "publish_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Publish Year"
+  },
+  {
+   "fieldname": "course_code_for_text_book",
+   "fieldtype": "Data",
+   "label": "Course Code (For Text Book)"
+  },
+  {
+   "fieldname": "no_of_students_for_text_book",
+   "fieldtype": "Data",
+   "label": "No of Students (For Text Book)"
+  },
+  {
+   "fieldname": "no_of_copies_required",
+   "fieldtype": "Int",
+   "label": "No of Copies Required"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "estimated_unit_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Unit Cost",
+   "permlevel": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Total Estimated Cost",
+   "permlevel": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "duplication_check_status",
+   "fieldtype": "Select",
+   "label": "Duplication Check Status",
+   "options": "Passed\nIn Progress\nFailed",
+   "permlevel": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-16 11:08:48.394605",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Books Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

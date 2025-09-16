@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series: ",
+ "creation": "2025-09-15 11:13:58.396716",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "naming_series",
+  "requester_full_name",
+  "requester_email_id",
+  "requester_type",
+  "requester_designation",
+  "requester_employee_id",
+  "hod",
+  "requested_books_list",
+  "status",
+  "librarian",
+  "library_convener",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "requester_full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requester Full Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "user.email",
+   "fieldname": "requester_email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requester Email id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requester_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Requester Type",
+   "options": "Faculty\nStaff",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requester_designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requester Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Book Suggestion Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "requester_employee_id",
+   "fieldtype": "Data",
+   "label": "Requester Employee ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_books_list",
+   "fieldtype": "Table",
+   "label": "Requested Books List",
+   "options": "Books Detail"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "BSR-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "status"
+  },
+  {
+   "fieldname": "librarian",
+   "fieldtype": "Link",
+   "label": "Librarian",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "library_convener",
+   "fieldtype": "Link",
+   "label": "Library Convener",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod",
+   "fieldtype": "Link",
+   "label": "HOD",
+   "options": "User",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-16 11:08:03.748622",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book Suggestion Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
